@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/button.css" />
+    <link rel="stylesheet" href="./assets/css/common/animate.css"/>
+    <link rel="stylesheet" href="./assets/css/common/slick-theme.min.css"/>
+    <link rel="stylesheet" href="./assets/css/common/slick.min.css"/>
+    <link rel="stylesheet" href="./assets/css/common/fade-bootstrap.css">
+
+    <link rel="preload" href="./assets/fonts/KozGoPr6N-Medium.otf" as="font" type="font/opentype" crossorigin>
+    <link rel="preload" href="./assets/fonts/KozGoPro-Bold.otf" as="font" type="font/opentype" crossorigin>
+    <link rel="preload" href="./assets/fonts/KozGoPro-Regular.otf" as="font" type="font/opentype" crossorigin>
+    <link rel="preload" href="./assets/fonts/Noto Sans Mono CJK JP Regular.otf" as="font" type="font/opentype" crossorigin>
+    <link rel="preload" href="./assets/fonts/小塚ゴシック Pr6N R.otf" as="font" type="font/opentype" crossorigin>
+    <link rel="preload" href="./assets/fonts/Noto/NotoSansJP-Regular.otf" as="font" type="font/opentype" crossorigin>
+    <link rel="preload" href="./assets/fonts/Noto/NotoSansJP-Medium.otf" as="font" type="font/opentype" crossorigin>
+    <link rel="stylesheet" href="./assets/css/sakura.css"/>
+</head>
+
+<body>
+    <div aria-hidden="true">
+        <div class='sakura'><img src="./assets/image/sakura/sakura-4.jpg" style="width:25px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/sakura-2.jpg" style="width:15px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/sakura-2.jpg" style="width:18px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/sakura-4.jpg" style="width:20px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/rose-1.jpg" style="width:25px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/rose-2.jpg" style="width:23px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/rose-3.jpg" style="width:13px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/rose-4.jpg" style="width:17px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/rose-5.jpg" style="width:25px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/rose-6.jpg" style="width:22px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/sakura-2.jpg" style="width:15px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura'><img src="./assets/image/sakura/sakura-2.jpg" style="width:23px; height:auto; mix-blend-mode: multiply;"></div>
+
+        <!-- <div class='sakura-diagonal'><img src="./assets/image/sakura/sakura-1.jpg" style="width:15px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-diagonal'><img src="./assets/image/sakura/sakura-2.jpg" style="width:15px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-diagonal'><img src="./assets/image/sakura/sakura-3.jpg" style="width:15px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-diagonal'><img src="./assets/image/sakura/sakura-4.jpg" style="width:15px; height:auto; mix-blend-mode: multiply;"></div> -->
+      </div>
+
+      <!-- <div aria-hidden="true">
+        <div class='sakura-slow'><img src="./assets/image/sakura/rose-3.jpg" style="width:13px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-slow'><img src="./assets/image/sakura/rose-4.jpg" style="width:17px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-slow'><img src="./assets/image/sakura/rose-5.jpg" style="width:25px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-slow'><img src="./assets/image/sakura/rose-6.jpg" style="width:22px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-slow'><img src="./assets/image/sakura/sakura-2.jpg" style="width:15px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-slow'><img src="./assets/image/sakura/sakura-2.jpg" style="width:23px; height:auto; mix-blend-mode: multiply;"></div>
+      </div>
+
+      <div aria-hidden="true">
+        <div class='sakura-fast'><img src="./assets/image/sakura/rose-3.jpg" style="width:13px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-fast'><img src="./assets/image/sakura/rose-4.jpg" style="width:17px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-fast'><img src="./assets/image/sakura/rose-5.jpg" style="width:25px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-fast'><img src="./assets/image/sakura/rose-6.jpg" style="width:22px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-fast'><img src="./assets/image/sakura/sakura-2.jpg" style="width:15px; height:auto; mix-blend-mode: multiply;"></div>
+        <div class='sakura-fast'><img src="./assets/image/sakura/sakura-2.jpg" style="width:23px; height:auto; mix-blend-mode: multiply;"></div>
+      </div> -->
+      
+      <div id="nav-menu">
+        <span class="menu-list">TOP</span>
+        <span class="menu-list">TOPICS</span>
+        <span class="menu-list">TALENTS</span>
+        <span class="menu-list">COMPANY</span>
+        <span class="menu-list">AUDITION</span>
+        <span class="menu-list">PRIVACY POLICY</span>
+        <div id="cross-btn">
+            <span class="cross-1"></span>
+            <span class="cross-2"></span>
+        </div>
+    </div>
+    <header class="wow slideInDown" data-wow-delay=".1s" id="header">
+        <div class="logo">
+            <a href=""><img src="./assets/image/logo.png" alt="YATTA"></a>
+            <span>ヤッター★プロモーション</span>
+        </div>
+        <div class="menu">
+            <a href="#" class="headerLink">
+                <div style="padding-bottom: 2rem; padding-top: 2rem;">ABOUT</div>
+            </a>
+            <a href="" class="headerLink">
+                <div style="padding-bottom: 2rem; padding-top: 2rem;">TOPICS</div>
+            </a>
+            <a href="" class="headerLink">
+                <div style="padding-bottom: 2rem; padding-top: 2rem;">TALENTS</div>
+            </a>
+            <a class="btn btn-bg-yellow"><span class="arrow"></span><span class="btn-text">AUDITION</span></a>
+            <a class="btn btn-bg-blue"><span class="arrow"></span><span class="btn-text">お仕事のご依頼</span></a>
+        </div>
+        <a>
+            <div class="hamburger sp-ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+        
+    </header>
+
+    <main id="main">
+        <section class="top-image" id="top-Image">
+            <p class="wow bounceIn" data-wow-delay="1.5s">#世の中をもっとハッピーに!</p>
+            <p class="wow bounceIn" data-wow-delay="1.5s">#しあわせあふれてる</p>
+            <div class="apply-button wow fadeInRight" data-wow-delay=".7s">
+                <div class="flag"></div>
+                <div class="flag-stick"></div>
+                <div class="flag-text">APPLY NOW</div>
+                <div class="btn-text">専属1期生<br>募集中</div>
+                <div class="triple-arrow">
+                    <span class="arrow left"></span>
+                    <span class="arrow"></span>
+                    <span class="arrow right"></span>
+                </div>
+            </div>
+        </section>
+
+        <section  class="mainboard-bg">
+            <section class="mainboard">
+                <section class="ABOUT wow fadeInUp" data-wow-delay=".2s">
+                    <div class="star-container">
+                        <img src="./assets/image/星大.jpg" class="star">
+                        <span>人を幸せにする才能</span>
+                    </div>
+                    <div class="about-content">
+                        <p>...............................................................................................................
+                        </p>
+                        <span>わたしたちヤッター★プロモーションは</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>人々に幸せを与えることができる才能 (タレント) を発掘、研鑽 輩出することで、</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>世の中をもっとハッピーにしていくことを目指しているタレントプロダクションです。</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>見た目の美しさやコンテンツカだけではなく、</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>喜びを超える感動、 湧き出る笑顔をお届けします。</span>
+                        <p>...............................................................................................................
+                        </p>
+                    </div>
+                    <div class="sp-about-content">
+                        <p>...............................................................................................................
+                        </p>
+                        <span>わたしたちヤッター★プロモーションは</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>人々に幸せを与えることができる</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>才能 (タレント) を発掘、研鑽 輩出することで、</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>世の中をもっとハッピーにしていくことを</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>目指しているタレントプロダクションです。</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>見た目の美しさやコンテンツカだけではなく、</span>
+                        <p>...............................................................................................................
+                        </p>
+                        <span>喜びを超える感動、 湧き出る笑顔をお届けします。</span>
+                        <p>...............................................................................................................
+                        </p>
+                    </div>
+                    <img src="./assets/image/pixta_85819578_M_星小.jpg" alt="falling star" class="small-stars">
+                </section>
+                <section class="TOPICS">
+                    <h2 class="wow slideInLeft" data-wow-delay=".1s">#TOPICS</h2>
+                    <div class="topic-card-container">
+                        <div class="topic-card first wow fadeInUp" data-wow-delay=".3s">
+                            <img src="./assets/image/star.jpg" alt="" class="topic-card-image">
+                            <div style="width:100%; height:auto; display:flex; flex-direction:column;">
+                                <div class="category">CATEGORY</div>
+                                <span class="title">記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル 記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル
+                                    記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル</span>
+                                <span class="article">テキストテキストテキストテキストテキスト テキストテキストテキストテキストテキスト テキストテキストテキストテキストテキスト
+                                    テキストテキストテキストテキストテキスト テキストテキストテキストテキスト</span>
+                                <span class="date">2023/10/1</span>
+                            </div>
+                        </div>
+                        <div class="topic-card second wow fadeInUp" data-wow-delay=".5s">
+                            <img src="./assets/image/star.jpg" alt="" class="topic-card-image">
+                            <div style="width:100%; height:auto; display:flex; flex-direction:column;">
+                                <div class="category">CATEGORY</div>
+                                <span class="title">記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル 記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル
+                                    記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル</span>
+                                <span class="article">テキストテキストテキストテキストテキスト テキストテキストテキストテキストテキスト テキストテキストテキストテキストテキスト
+                                    テキストテキストテキストテキストテキスト テキストテキストテキストテキスト</span>
+                                <span class="date">2023/10/1</span>
+                            </div>
+                        </div>
+                        <div class="topic-card third wow fadeInUp" data-wow-delay=".7s">
+                            <img src="./assets/image/star.jpg" alt="" class="topic-card-image">
+                            <div style="width:100%; height:auto; display:flex; flex-direction:column;">
+                                <div class="category">CATEGORY</div>
+                                <span class="title">記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル 記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル
+                                    記事タイトル記事タイトル記事タイ トル記事タイトル記事タイトル</span>
+                                <span class="article">テキストテキストテキストテキストテキスト テキストテキストテキストテキストテキスト テキストテキストテキストテキストテキスト
+                                    テキストテキストテキストテキストテキスト テキストテキストテキストテキスト</span>
+                                <span class="date">2023/10/1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="fv-btn wow fadeInUp" data-wow-delay=".3s"><span class="arrow"></span><span>VIEW MORE</span></a>
+                </section>
+                <section class="TALENTS">
+                    <h2 class="wow slideInLeft" data-wow-delay=".1s">#TALENTS</h2>
+                    <div class="talents-container">
+                        <div class="talent-card wow fadeInUp" data-wow-delay=".3s">
+                            <div class="talent-card-image"><img src="./assets/image/eriko_sato.jpg"></div>
+                            <div class="en-Name">ERIKO SATO</div>
+                            <div class="ja-Name">佐藤 衣里子</div>
+                        </div>
+                        <div class="talent-card wow fadeInUp" data-wow-delay=".3s">
+                            <div class="talent-card-image"><img src="./assets/image/chisato.jpg"></div>
+                            <div class="en-Name">CHISATO</div>
+                            <div class="ja-Name">千里</div>
+                        </div>
+                        <div class="talent-card wow fadeInUp" data-wow-delay=".3s">
+                            <div class="talent-card-image"><img src="./assets/image/美律.jpg"></div>
+                            <div class="en-Name">MINORI</div>
+                            <div class="ja-Name">美律</div>
+                        </div>
+                        <div class="talent-card wow fadeInUp" data-wow-delay=".3s">
+                            <div class="talent-card-image"></div>
+                            <div class="en-Name">YAMADA HANAKO</div>
+                            <div class="ja-Name">山田 花子</div>
+                        </div>
+
+                        <div class="talent-card wow fadeInUp" data-wow-delay=".3s">
+                            <div class="talent-card-image"></div>
+                            <div class="en-Name">YAMADA HANAKO</div>
+                            <div class="ja-Name">山田 花子</div>
+                        </div>
+                        <div class="talent-card wow fadeInUp" data-wow-delay=".3s">
+                            <div class="talent-card-image"></div>
+                            <div class="en-Name">YAMADA HANAKO</div>
+                            <div class="ja-Name">山田 花子</div>
+                        </div>
+                        <div class="talent-card wow fadeInUp" data-wow-delay=".3s">
+                            <div class="talent-card-image"></div>
+                            <div class="en-Name">YAMADA HANAKO</div>
+                            <div class="ja-Name">山田 花子</div>
+                        </div>
+                        <div class="talent-card wow fadeInUp" data-wow-delay=".3s">
+                            <div class="talent-card-image"></div>
+                            <div class="en-Name">YAMADA HANAKO</div>
+                            <div class="ja-Name">山田 花子</div>
+                        </div>
+                    </div>
+                    <a class="fv-btn wow fadeInRight" data-wow-delay="1.1s"><span class="arrow"></span><span>VIEW MORE</span></a>
+                </section>
+                <section class="CONTACT">
+                    <h2 class="wow slideInLeft">#CONTACT</h2>
+                    <div class="contact-card">
+                        <div class="image-container"><div style="width:100%; height:100%; background-color: pink; z-index:1; transition:all 0.2s ease;" class="wow fadeInLeftMask" data-wow-delay=".4s"></div><img src="./assets/image/contact.jpg" style="position:absolute;top:0; left:0; width: 100%; height:auto; z-index:2;" class="wow fadeInLeft" data-wow-delay="1.3s"></div>
+                        <div class="contact-content wow fadeInUp" data-wow-delay=".4s">
+                            <span class="contact-title">キャスティングのご依頼</span>
+                            <span class="contact-title">お待ちしています!</span>
+                            <span class="contact-sentence">ヤッター★プロモーションでは、雑誌やプロモーションムービー等の撮影モデル、メディア出演やイベント出演など幅広い分野に対応できるタレントが豊富に在籍しています。</span>
+                            <!-- <span class="contact-sentence">ンムービー等の撮影モデル、メディア出演やイベント</span> -->
+                            <!-- <span class="contact-sentence">出演など幅広い分野に対応できるタレントが豊富に在</span> -->
+                            <!-- <span class="contact-sentence">籍しています。</span> -->
+                            <span class="contact-sentence">私たちのタレントがプロジェクトやイベントの魅力を引き立て、それらを成功に導きます!</span>
+                            <!-- <span class="contact-sentence">引き立て、それらを成功に導きます!</span> -->
+                        </div>
+                    </div>
+                    <a class="fv-btn"><span class="arrow"></span><span>VIEW MORE</span></a>
+                </section>
+                <section class="AUDITION">
+                    <h2 class="wow slideInLeft" data-wow-delay=".2s">#AUDITION</h2>
+                    <div class="audition-container wow fadeInUp" data-wow-delay=".4s">
+                        <div class="audition-text">ヤッター★プロモーション所属タレント募集中！<br>
+                            モデル・インフルエンサー・タレント・アイドルなど
+                            幅広いジャンルで活躍できるチャンス！<br>
+                            あなたの未来は無限大です。<br>
+                            さあ、夢の始まりへ最後の一歩を踏み出そう！</div>
+                        <div class="audition-btn sp-hide">
+                            <div class="audition-btn-txt"><p>エントリーは<br>こちら</p></div>
+                            <span class="triple-arrow">
+                                <span class="arrow left"></span>
+                                <span class="arrow"></span>
+                                <span class="arrow right"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="audition-btn sp-show">
+                        <div class="audition-btn-txt"><p>エントリーは<br>こちら</p></div>
+                        <span class="triple-arrow">
+                            <span class="arrow left"></span>
+                            <span class="arrow"></span>
+                            <span class="arrow right"></span>
+                        </span>
+                    </div>
+                </section>
+                <section class="ENDING wow fadeInUp" data-wow-delay=".4s">
+                    <div class="bg-color"></div>
+                    <div class="title">幸せのカタチは十人十色。<br>
+                        ヤッター★プロモーションには<br>
+                        様々な幸せを生み出す才能があります。
+                        </div>
+                    <div class="content">ヤッター★プロモーションは、美しさ、楽しさ、面白さなど<br>
+                        様々なコンテンツで人々に感動と幸せをご提供します。
+                       </div>
+                    <div class="logo-container"><img src="./assets/image/logo.png" alt="YATTA"></div>
+                </section>
+                <section class="sp-ENDING">
+                    <div class="title">幸せのカタチは十人十色。<br>
+                        ヤッター★プロモーションには<br>
+                        様々な幸せを生み出す<br>才能があります。
+                        </div>
+                    <div class="content">ヤッター★プロモーションは、<br>美しさ、楽しさ、面白さなど<br>
+                        様々なコンテンツで人々に<br>感動と幸せをご提供します。
+                       </div>
+                    <div class="logo-container"><img src="./assets/image/logo.png" alt="YATTA"></div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="pc-footer">
+        <div class="upper-part">
+            <div class="left-part">
+                <div class="content">ヤッター★プロモーションは、人を幸せにする才能たちが輝くタレントプロダクションです。<br>
+                    撮影モデルや各種イベント・プロモーションなど幅広くご対応いたします。
+                </div>
+                <div class="btn-container">
+                    <a class="btn btn-bg-yellow"><span class="arrow"></span><span class="btn-text">AUDITION</span></a>
+                    <a class="btn btn-bg-blue"><span class="arrow"></span><span class="btn-text">お仕事のご依頼</span></a>
+                </div>
+                <div class="page-list">
+                    <a>TOP</a>
+                    <div>/</div>
+                    <a>TOPICS</a>
+                    <div>/</div>
+                    <a>TALENTS</a>
+                    <div>/</div>
+                    <a>COMPANY</a>
+                    <div>/</div>
+                    <a>PRIVACY POLICY</a>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="logo-container"><img src="./assets/image/logo.png"></div>
+                <div class="phone-number-container">
+                    <div class="phone-icon"><img src="./assets/image/phone-icon.jpg"></div>
+                    <div class="phone-number">03-000-0000</div>
+                </div>
+                <div class="post-number">〒000-0000 東京都◯◯◯◯◯ 1-1-1◯◯ビル</div>
+            </div>
+            </div>
+        </div>
+        <div class="down-part">
+            Copyright© yatta-promotion. All Rights Reserved.
+        </div>
+    </footer>
+    <footer class="sp-footer">
+        <div class="container">
+            <div class="logo-container"><img src="./assets/image/logo.png"></div>
+            <div class="content">ヤッター★プロモーションは、人を幸せにする才能たちが輝くタレントプロダクションです。<br>
+                撮影モデルや各種イベント・プロモーションなど幅広くご対応いたします。
+            </div>
+            <div class="btn-container">
+                <a class="btn btn-bg-yellow"><span class="arrow"></span><span class="btn-text">AUDITION</span></a>
+                <a class="btn btn-bg-blue"><span class="arrow"></span><span class="btn-text">お仕事のご依頼</span></a>
+            </div>
+            <div class="phone-post-container">
+                <div class="phone-number-container">
+                    <div class="phone-icon"><img src="./assets/image/phone-icon.jpg"></div>
+                    <div class="phone-number">03-000-0000</div>
+                </div>
+                <div class="post-number">〒000-0000 東京都◯◯◯◯◯ 1-1-1◯◯ビル</div>
+            </div>
+            <div class="copyright">Copyright© yatta-promotion. All Rights Reserved.</div>
+        </div>
+    </footer>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyA5TK-uCUQQ3BwooDZcJiiZoNQtiWVNLhk",
+          authDomain: "talentagency-37b01.firebaseapp.com",
+          projectId: "talentagency-37b01",
+          storageBucket: "talentagency-37b01.appspot.com",
+          messagingSenderId: "807561204729",
+          appId: "1:807561204729:web:a55b6b6d2a905303eae328",
+          measurementId: "G-0CQNF7DJML"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+
+</html>
