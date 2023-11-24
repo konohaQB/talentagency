@@ -1,0 +1,332 @@
+
+  @-webkit-keyframes sakura-fall {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  
+  @-webkit-keyframes sakura-shake {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    50% {
+      -webkit-transform: translateX(80px);
+      transform: translateX(80px);
+    }
+  }
+
+
+  @keyframes sakura-fall {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  
+  @keyframes sakura-shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(80px);
+    }
+  }
+
+
+  .sakura {
+    position: fixed;
+    mix-blend-mode: multiply;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: sakura-fall, sakura-shake;
+    -webkit-animation-duration: 12s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: sakura-fall, sakura-shake;
+    animation-duration: 12s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+  }
+
+  .sakura:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s;
+  }
+  .sakura:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s;
+  }
+  .sakura:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, 0.5s;
+    animation-delay: 6s, 0.5s;
+  }
+  .sakura:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s;
+  }
+  .sakura:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 5.5s, 2s;
+    animation-delay: 5.5s, 2s;
+  }
+  .sakura:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s;
+  }
+  .sakura:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 0.5s, 2s;
+    animation-delay: 0.5s, 2s;
+  }
+  .sakura:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s;
+  }
+  .sakura:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 9s, 0s;
+    animation-delay: 9s, 0s;
+  }
+  .sakura:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s;
+  }
+  .sakura:nth-of-type(10) {
+    left: 400px;
+    -webkit-animation-delay: 11s, 0s;
+    animation-delay: 11s, 0s;
+  }
+  .sakura:nth-of-type(11) {
+    left: 65%;
+    -webkit-animation-delay: 3.5s, 2.5s;
+    animation-delay: 3.5s, 2.5s;
+  }
+
+
+  
+  .sakura-slow {
+    position: fixed;
+    mix-blend-mode: multiply;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: sakura-fall, sakura-shake;
+    -webkit-animation-duration: 16s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: sakura-fall, sakura-shake;
+    animation-duration: 16s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+  }
+
+  .sakura-slow:nth-of-type(0) {
+    left: 17%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s;
+  }
+  .sakura-slow:nth-of-type(1) {
+    left: 17%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s;
+  }
+  .sakura-slow:nth-of-type(2) {
+    left: 27%;
+    -webkit-animation-delay: 4.6s, 0.5s;
+    animation-delay: 4.6s, 0.5s;
+  }
+  .sakura-slow:nth-of-type(3) {
+    left: 37%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s;
+  }
+  .sakura-slow:nth-of-type(4) {
+    left: 47%;
+    -webkit-animation-delay: 5.5s, 2s;
+    animation-delay: 5.5s, 2s;
+  }
+  .sakura-slow:nth-of-type(5) {
+    left: 97%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s;
+  }
+
+
+  .sakura-fast {
+    position: fixed;
+    mix-blend-mode: multiply;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: sakura-fall, sakura-shake;
+    -webkit-animation-duration: 8s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: sakura-fall, sakura-shake;
+    animation-duration: 8s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+  }
+
+  .sakura-fast:nth-of-type(0) {
+    left: 11%;
+    -webkit-animation-delay: 4s, 0s;
+    animation-delay: 4s, 0s;
+  }
+  .sakura-fast:nth-of-type(1) {
+    left: 15%;
+    -webkit-animation-delay: 2.6s, 1s;
+    animation-delay: 2.6s, 1s;
+  }
+  .sakura-fast:nth-of-type(2) {
+    left: 25%;
+    -webkit-animation-delay: 4.6s, 0.5s;
+    animation-delay: 4.6s, 0.5s;
+  }
+  .sakura-fast:nth-of-type(3) {
+    left: 35%;
+    -webkit-animation-delay: 3.2s, 2s;
+    animation-delay: 3.2s, 2s;
+  }
+  .sakura-fast:nth-of-type(4) {
+    left: 45%;
+    -webkit-animation-delay: 5.5s, 2s;
+    animation-delay: 5.5s, 2s;
+  }
+  .sakura-fast:nth-of-type(5) {
+    left: 55%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @-webkit-keyframes sakura-diagonal-x {
+    0% {
+      left: -10%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  @-webkit-keyframes sakura-diagonal-y {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(1000px);
+      transform: translateY(1000px);
+    }
+  }
+  
+
+    
+  @keyframes sakura-diagonal-x {
+    0% {
+        left:-10%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  @keyframes sakura-diagonal-y {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+      transform: translateY(1000px);
+    }
+  }
+
+
+  .sakura-diagonal{
+    position: absolute;
+    mix-blend-mode: multiply;
+    left: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: sakura-diagonal-x, sakura-diagonal-y;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: sakura-diagonal-fall, sakura-diagonal-y;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+  }
+
+/* 
+  .sakura-diagonal:nth-of-type(0) {
+    top: 50%;
+    -webkit-animation-delay: 2s, 0.5s;
+    animation-delay: 2s, 0.5s;
+  }
+  .sakura-diagonal:nth-of-type(1) {
+    top: 10%;
+    -webkit-animation-delay: 4s, 2.5s;
+    animation-delay: 4s, 2.5s;
+  }
+  .sakura-diagonal:nth-of-type(2) {
+    top: 20%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s;
+  }
+  .sakura-diagonal:nth-of-type(3) {
+    top: 30%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s;
+  } */

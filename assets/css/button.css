@@ -1,0 +1,411 @@
+@charset "UTF-8";
+
+.btn {
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    line-height: 35px;
+    border: none;
+}
+
+.btn-bg-yellow {
+    background: rgb(255, 220, 54);
+}
+
+.btn-bg-blue {
+    background: rgb(149, 225, 225);
+}
+
+.btn-bg-blue .btn-text {
+    position: relative;
+    display: block;
+    letter-spacing: 4px;
+    font-family: 'KozGoPr6N Medium';
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-bg-yellow .btn-text {
+    position: relative;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 8px;
+    font-family: 'BebasNeuePro Regular';
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn:before,
+.btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(194, 13, 13);
+    transition: all 0.8s ease;
+}
+
+.btn:after {
+    height: 0%;
+    width: 2px;
+}
+
+.btn:before {
+    width: 0%;
+    height: 2px;
+}
+
+.btn:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn:hover:after {
+    height: 100%;
+}
+
+.btn:hover:before {
+    width: 100%;
+}
+
+.btn .btn-text:hover {
+    color: rgb(194, 13, 13);
+}
+
+.btn .btn-text:before,
+.btn .btn-text:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(194, 13, 13);
+    transition: all 0.8s ease;
+}
+
+.btn .btn-text:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn .btn-text:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn .btn-text:hover:before {
+    height: 100%;
+}
+
+.btn .btn-text:hover:after {
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    transition: all 0.6s ease;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.btn:hover .arrow {
+    border: solid rgb(194, 13, 13);
+    border-width: 0 3px 3px 0;
+}
+
+
+
+.hamburger span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.hamburger.active span {
+    background-color: #fff;
+}
+
+.hamburger {
+    display: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(255,220,54);
+    cursor: pointer;
+}
+
+
+
+.fv-btn {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+    width: 300px;
+    height: 60px;
+    color: rgb(150, 226, 226);
+    border: 2rem solid rgb(150, 226, 226);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.fv-btn span {
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    right: 0px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 5px;
+    font-family: 'BebasNeuePro Regular';
+    font-size: 32px;
+}
+
+.fv-btn .arrow {
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    right: 25px;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    border: solid rgb(150, 226, 226);
+    border-width: 0 3px 3px 0;
+    transition: all 0.2s ease;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.fv-btn:hover .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    top: 23px;
+    right: 20px;
+}
+
+.fv-btn::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: rgb(150, 226, 226);
+    transition: all 0.5s;
+    right: auto;
+    left: -800px;
+    bottom: -150px;
+    z-index: 0;
+    transform: rotate(45deg);
+}
+
+.fv-btn:hover {
+    color: white;
+}
+
+.fv-btn:hover::after {
+    left: -200px;
+}
+
+
+.audition-btn {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 242px;
+    height: 242px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10%;
+    cursor: pointer;
+    transform: all 1s;
+}
+.audition-btn:hover {
+    background-color: rgb(150, 226, 226);
+}
+.audition-btn-txt{
+    width:220px;
+    height:auto;
+    font-family:'KozGoPro Bold';
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(150, 226, 226);
+    margin-top:30px;
+    transform: all 1s;
+}
+.audition-btn:hover .audition-btn-txt{
+    color:white;
+}
+.triple-arrow{
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    height:auto;
+    margin-bottom:10%;
+}
+.audition-btn .arrow {
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border: solid rgb(150, 226, 226);
+    border-width: 0 5px 5px 0;
+    transition: all 1s ease;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.audition-btn:hover .arrow{
+    border: solid white;
+    border-width: 0 5px 5px 0;
+}
+.audition-btn .right{
+    right:5px;
+}
+.audition-btn .left{
+    right:35px;
+}
+
+
+
+.audition-btn.sp-show{
+    margin-top:30px;
+    margin-right:0;
+    background-color:rgb(150, 226, 226);
+    transform: all 1s;
+}
+.audition-btn.sp-show .audition-btn-txt{
+    color:white;
+    transform: all 1s;
+}
+.audition-btn.sp-show .arrow{
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    transform: all 1s;
+}
+.audition-btn.sp-show:hover{
+    background-color: white;
+    border: solid 3px rgb(150, 226, 226);
+}
+.audition-btn.sp-show:hover .audition-btn-txt{
+    color:rgb(150, 226, 226);
+}
+.audition-btn.sp-show:hover .arrow{
+    border: solid rgb(150, 226, 226);
+    border-width: 0 5px 5px 0;
+}
+
+.top-image .apply-button{
+    position:absolute;
+    width:242px;
+    height:242px;
+    background-color:rgb(255,220,54);
+    border-radius: 50%;
+    box-shadow: 0px 7px rgb(204, 174, 22);
+    cursor: pointer;
+
+    font-family:'KozGoPro Bold';
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    text-align: center;
+    color: rgb(51,51,51);
+    transition: all 0.5s ease;
+}
+.top-image .flag{
+    position:absolute;
+    top:30px;
+    left:15px;
+    width:140px;
+    height:35px;
+    background-color: rgb(150, 226, 226);
+    border: solid 3px white;
+    border-right: none;
+    box-shadow: 0 3px rgba(50,50,50,0.1);
+    overflow:hidden;
+}
+.top-image .flag::after{
+    content:"";
+    position:absolute;
+    top:-3px;
+    right:-28px;
+    width:35px;
+    height: 35px;
+    /* top:-15px;
+    right:-58px;
+    width:60px;
+    height: 60px; */
+    background-color:rgb(255,220,54);
+    border:solid 3px white;
+    box-shadow: inset 3px 0 rgba(50,50,50,0.1);;
+    transform: rotate(45deg);
+}
+.top-image .flag-stick{
+    position:absolute;
+    top:29px;
+    left:15px;
+    width:4px;
+    height:65px;
+    background-color: white;
+    border-radius:2px;
+}
+.top-image .flag-text{
+    position:absolute;
+    top:37px;
+    left:20px;
+    font-family: 'BebasNeuePro Regular';
+    font-size:22px;
+    color:white;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.apply-button .btn-text{
+    margin-top:90px;
+}
+
+.apply-button .arrow {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.apply-button .right{
+    left:120px;
+}
+.apply-button .left{
+    left:80px;
+}
+.apply-button:hover .flag{
+    top:-2px;
+}
+
+.apply-button:hover .flag-text{
+    top:5px;
+}
